@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документація до програми (Лабораторна робота №1)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+<h1>Документація до програми (Лабораторна робота №1)</h1>
+<p>Ця документація описує модульний Java-додаток, який моделює банківські операції.</p>
+
+<div class="section">
+    <h2>1. Опис програми</h2>
+    <p>Програма реалізує банківські операції, такі як:</p>
+    <ul>
+        <li>Створення банківських карток для користувачів.</li>
+        <li>Перевірка віку користувача.</li>
+        <li>Управління підписками.</li>
+    </ul>
+    <p>Додаток побудований із використанням модульної системи Java (Jigsaw).</p>
+</div>
+
+<div class="section">
+    <h2>2. Структура програми</h2>
+    <p>Програма складається з кількох модулів:</p>
+    <ul>
+        <li><code>jmp-dto</code>: Містить DTO-класи (User, BankCard, Subscription).</li>
+        <li><code>jmp-bank-api</code>: Інтерфейс Bank.</li>
+        <li><code>jmp-service-api</code>: Інтерфейс Service.</li>
+        <li><code>jmp-cloud-bank-impl</code>: Реалізація BankImpl.</li>
+        <li><code>jmp-cloud-service-impl</code>: Реалізація ServiceImpl.</li>
+        <li><code>jmp-main</code>: Головний клас із запуском.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>3. Інструкції з використання</h2>
+    <ol>
+        <li>Скомпілюйте проект командою: <code>mvn clean install</code>.</li>
+        <li>Запустіть програму командою: <code>java -p out -m jmp.main/edu.hneu.mjt.andrii.Main</code>.</li>
+        <li>Перевірте консольний вивід, який показує:
+            <ul>
+                <li>Створення карти з номером (наприклад, 1234-5678-9012-3456).</li>
+                <li>Результати перевірки віку (true/false).</li>
+                <li>Ідентифікатор підписки (наприклад, SUB1).</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>4. Примітки</h2>
+    <p>
+        - Проект використовує лише стандартні засоби Java без зовнішніх бібліотек.
+        - Для коректної роботи необхідно налаштувати модульні залежності в `module-info.java`.
+        - Джерельний код доступний за посиланням: [https://github.com/YourUsername/lab1-java-modules](https://github.com/YourUsername/lab1-java-modules).
+    </p>
+</div>
+
+<div class="section">
+    <h2>5. Автор</h2>
+    <p>Студент: Сердюков А. А.
+        Група: САУм-24-1
+        Дата: 26 серпня 2025 року</p>
+</div>
+</body>
+</html>
